@@ -4,6 +4,7 @@ import CryptoKit
 public class CrackStation: Decrypter{
     required public init() {
         // TODO: Implement
+        
     }
 
     public func decrypt(shaHash: String) -> String? {
