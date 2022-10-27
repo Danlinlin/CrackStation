@@ -1,12 +1,12 @@
 import Foundation
 import CryptoKit
 
-class CrackStation: Decrypter{
-    required init() {
+public class CrackStation: Decrypter{
+    required public init() {
         // TODO: Implement
     }
 
-    func decrypt(shaHash: String) -> String? {
+    public func decrypt(shaHash: String) -> String? {
         // TODO: Implement
         var plainTextPasswords: [String: String] = [:]
         let pocv1String = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
