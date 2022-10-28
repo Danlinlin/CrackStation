@@ -10,16 +10,22 @@ public class CrackStation: Decrypter{
     public func decrypt(shaHash: String) -> String? {
         // TODO: Implement
         var plainTextPasswords: [String: String] = [:]
-        let pocv1String = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
-        for char in pocv1String{
-            let str = String(char)
-            if #available(macOS 10.15, *) {
-                var encryptStr = CrackStation.encryptUsingSha1(from: str)
-                let start = encryptStr.index(encryptStr.startIndex, offsetBy: 0)
-                let end = encryptStr.index(encryptStr.startIndex, offsetBy: 12)
-                encryptStr.removeSubrange(start...end)
-                plainTextPasswords[encryptStr] = str
-            }
+        //POC v1
+//        let pocv1String = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+//        for char in pocv1String{
+//            let str = String(char)
+//            if #available(macOS 10.15, *) {
+//                var encryptStr = CrackStation.encryptUsingSha1(from: str)
+//                let start = encryptStr.index(encryptStr.startIndex, offsetBy: 0)
+//                let end = encryptStr.index(encryptStr.startIndex, offsetBy: 12)
+//                encryptStr.removeSubrange(start...end)
+//                plainTextPasswords[encryptStr] = str
+//            }
+//        }
+        do {
+            try plainTextPasswords = loadDictionaryFromDisk()
+        } catch let (err as NSError) {
+            print(err)
         }
         print(plainTextPasswords)
         guard let crackedPassword = plainTextPasswords[shaHash] else { return nil }
