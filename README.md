@@ -23,7 +23,7 @@ The [Swift Package Manager](https://www.swift.org/package-manager/) is a tool fo
 Once you have your Swift package set up, add CrackStation to the list of dependencies in your Package. swift file:
 ```
     dependencies: [
-        .package(url: "git@github.com:Danlinlin/CrackStation.git", from: "1.2.0")
+        .package(url: "git@github.com:Danlinlin/CrackStation.git", from: "1.3.0")
     ]
 ```
 
