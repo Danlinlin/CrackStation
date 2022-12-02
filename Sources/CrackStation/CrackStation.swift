@@ -2,7 +2,7 @@ import Foundation
 import CryptoKit
 
 public class CrackStation: Decrypter{
-    static private var plainTextPasswords: [String: String] = loadDictionaryFromDisk()
+    static private let plainTextPasswords: [String: String] = loadDictionaryFromDisk()
     
     required public init() {
     }

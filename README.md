@@ -11,7 +11,7 @@ A tool that can crack encrpted passwords.
 
 ## Mission Statement
 
-This package cound crack passwords that matches the regular expression [A-Za-z0-9?!]{1,3} and encrypted using SHA-1 or SHA-256. This decrypter can quickly find the corresponding password in the lookup table with a time complexity of O(1). But it only cracks unsalted hashes. The purpose of this library is to deepen your understanding of password cracking and to practice swift usage.
+This package is useful for for those who want to learn how to write a crack station to crack unsalted hashes. It's educational for hacker beginners. The purpose of this library is to deepen users' understanding of password cracking and to practice the use of Swift and Python.
 
 
 ## Installation
@@ -23,7 +23,7 @@ The [Swift Package Manager](https://www.swift.org/package-manager/) is a tool fo
 Once you have your Swift package set up, add CrackStation to the list of dependencies in your Package. swift file:
 ```
     dependencies: [
-        .package(url: "git@github.com:Danlinlin/CrackStation.git", from: "1.3.0")
+        .package(url: "git@github.com:Danlinlin/CrackStation.git", from: "1.3.1")
     ]
 ```
 
@@ -61,6 +61,10 @@ This is a example call site of the decrypt function. Create an object called cra
 
 ## Version History
 
+* 1.3.1
+    * MVP(fixed bugs)
+    * See [commit change](https://github.com/Danlinlin/CrackStation/commit/30c09b303007fcb1823bd9d8a8f19fb4ba783749)
+    
 * 1.3.0
     * MVP
     * See [commit change](https://github.com/Danlinlin/CrackStation/commit/30c09b303007fcb1823bd9d8a8f19fb4ba783749)
