@@ -11,7 +11,7 @@ A tool that can crack encrpted passwords.
 
 ## Mission Statement
 
-This package is useful for for those who want to learn how to write a crack station to crack unsalted hashes. It's educational for hacker beginners. The purpose of this library is to deepen users' understanding of password cracking and to practice the use of Swift and Python.
+This package is useful for those who want to learn how to build a crack station to decrypt unsalted hashes. It's educational for hacker beginners. The purpose of this library is to deepen users' understandings of password cracking and to practice the use of Swift and Python.
 
 
 ## Installation
@@ -63,8 +63,7 @@ This is a example call site of the decrypt function. Create an object called cra
 
 * 1.3.1
     * MVP(fixed bugs)
-    * See [commit change](https://github.com/Danlinlin/CrackStation/commit/30c09b303007fcb1823bd9d8a8f19fb4ba783749)
-    
+    * See [commit change](https://github.com/Danlinlin/CrackStation/commit/0594c1d1713b23c3ce3c1369fb4e015afc74c79e)
 * 1.3.0
     * MVP
     * See [commit change](https://github.com/Danlinlin/CrackStation/commit/30c09b303007fcb1823bd9d8a8f19fb4ba783749)
